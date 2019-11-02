@@ -6,3 +6,28 @@ http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Hello World\n');
 }).listen(port);
+
+
+<body>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBoHDwn-K2_DEcxI0nDNulJGCUj7Gu4rdU",
+    authDomain: "hhhhhhh-2b4bf.firebaseapp.com",
+    databaseURL: "https://hhhhhhh-2b4bf.firebaseio.com",
+    projectId: "hhhhhhh-2b4bf",
+    storageBucket: "hhhhhhh-2b4bf.appspot.com",
+    messagingSenderId: "925675222903",
+    appId: "1:925675222903:web:9370bbc75d5e34d3fe1372",
+    measurementId: "G-NM1YN4EBQT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
