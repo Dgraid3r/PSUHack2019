@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<p>Please input the URL of the Wikipedia article you wish to take a look at</p>
+
+<button onclick="myFunction()">click here</button>
+
+<script>
+
+function myFunction() 
+{
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  x.setAttribute("value", "your text here");
+  //now we should have the URL(or i guess now it's a word?) stored in variable x
+  //document.body.appendChild(x);
+
+  const Url = 'insert bans big server here';
+  $('.btn').click(function()
+  {
+    $.post(Url, x, parseUrl(x))
+    {
+      console.log('${x} and jawns')
+},
+error: parseUrl() {
+    alert("error"); 
+},
+success: parseUrl(data) 
+{   
+});
+  }
+}
+</script>
+<style>
+div#expand{
+	display:block;
+}
+</style>
+<script>
+function show()
+{
+if(document.getElementById('expand').style.display == 'none')
+	document.getElementById('expand').style.display = 'block';
+else
+	document.getElementById('expand').style.display = 'none';
+}
+</script>
+</head>
+<body>
+<a href="javascript:;" onclick=show()>Show/Hide Text</a>	
+<div id="expand">
+//insert the text we need into here
+</div>
+
+</body>
+
+</body>
+</html>
+
