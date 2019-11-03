@@ -1,0 +1,4 @@
+import wikipedia
+something=str(input("What would you like to know about? "))
+summary=str(wikipedia.summary(something))
+print(summary)
