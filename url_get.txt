@@ -12,11 +12,8 @@
 
 function myFunction() 
 {
-  var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  x.setAttribute("value", "your text here");
+var x = textObject.value
   //now we should have the URL(or i guess now it's a word?) stored in variable x
-  //document.body.appendChild(x);
 
   const Url = 'insert bans big server here';
   $('.btn').click(function()
