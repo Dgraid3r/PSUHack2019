@@ -15,20 +15,20 @@ function myFunction()
   var x = document.createElement("INPUT");
   x.setAttribute("type", "text");
   x.setAttribute("value", "your text here");
-  //now we should have the URL stored in variable x
+  //now we should have the URL(or i guess now it's a word?) stored in variable x
   //document.body.appendChild(x);
 
   const Url = 'insert bans big server here';
   $('.btn').click(function()
   {
-    $.post(Url, x, function(x))
+    $.post(Url, x, parseUrl(x))
     {
       console.log('${x} and jawns')
 },
-error: function() {
+error: parseUrl() {
     alert("error"); 
 },
-success: function(data) {   
+success: parseUrl(data) {   
 });
   }
 }
