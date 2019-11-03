@@ -28,7 +28,30 @@ function myFunction()
 error: parseUrl() {
     alert("error"); 
 },
-success: parseUrl(data) {   
+success: parseUrl(data) 
+{   
+<style>
+div#expand{
+	display:block;
+}
+</style>
+<script>
+function show()
+{
+if(document.getElementById('expand').style.display == 'none')
+	document.getElementById('expand').style.display = 'block';
+else
+	document.getElementById('expand').style.display = 'none';
+}
+</script>
+</head>
+<body>
+<a href="javascript:;" onclick=show()>Show/Hide Text</a>	
+<div id="expand">
+//insert the text we need into here
+</div>
+
+</body>
 });
   }
 }
@@ -36,3 +59,4 @@ success: parseUrl(data) {
 
 </body>
 </html>
+
