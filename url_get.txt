@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<p>Please input the URL of the Wikipedia article you wish to take a look at</p>
+
+<button onclick="myFunction()">click here</button>
+
+<script>
+
+function myFunction() 
+{
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  x.setAttribute("value", "your text here");
+  //now we should have the URL stored in variable x
+  //document.body.appendChild(x);
+
+  const Url = 'insert bans big server here';
+  $('.btn').click(function()
+  {
+    $.post(Url, x, function(x))
+    {
+      console.log('${x} and jawns')
+},
+error: function() {
+    alert("error"); 
+},
+success: function(data) {   
+});
+  }
+}
+</script>
+
+</body>
+</html>
